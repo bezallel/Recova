@@ -94,7 +94,7 @@
       });
 
       renderSupplierList();
-      setStatus(`Loaded ${rows.length} rows. Header (Debit): ${headerMap.debitNote || 'NOT FOUND'}. Rows with debit: ${explicitCount}. Found ${Object.keys(suppliersMap).length} supplier(s) requiring debit.`);
+      setStatus(`Loaded ${rows.length} rows. Header (Debit): ${headerMap.debitNote || 'NOT FOUND'}. Rows with debit: ${explicitCount}. Found ${Object.keys(suppliersMap).length} supplier(s) to debit.`);
       console.log('Suppliers map:', suppliersMap);
 
     } catch (err) {
