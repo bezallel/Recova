@@ -405,7 +405,7 @@ function generateForSupplier(supplierName) {
 
   wrapper.innerHTML = `
     <div class="note-head">
-      <h3>Triple E Debit Note — ${escapeHtml(supplierName)}</h3>
+      <h3>Recova Debit Note — ${escapeHtml(supplierName)}</h3>
       <div class="note-meta">${formatCurrency(sup.totalDebit)} — ${sup.items.length} item(s)</div>
     </div>
     <div class="note-body">${noteHTML}</div>
@@ -803,7 +803,7 @@ async function exportNoteToPDF(noteEl, supplierName) {
   // --- ADD PDF HEADING ---
   pdf.setFontSize(16);
   pdf.setFont('helvetica', 'bold');
-  pdf.text('TRIPLE E - DEBIT NOTE', pdf.internal.pageSize.getWidth() / 2, 15, { align: 'center' });
+  pdf.text('RECOVA - DEBIT NOTE', pdf.internal.pageSize.getWidth() / 2, 15, { align: 'center' });
 
   const pageWidth = pdf.internal.pageSize.getWidth();
   const pageHeight = pdf.internal.pageSize.getHeight();
